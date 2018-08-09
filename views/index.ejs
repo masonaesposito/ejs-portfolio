@@ -1,0 +1,136 @@
+<html id='html'>
+<div class="container">
+  <div class='jumbotron' id='jumbotron'>
+
+    <head>
+      <link href="css/style.css" rel="stylesheet" />
+      <title> Mason's Portfolio </title>
+    </head>
+
+
+    <body>
+      <div id='name'>
+        <h1>
+
+          <%= person.firstName %>
+            <%= person.lastName %>
+
+        </h1>
+
+      </div>
+      <div id='occupation'>
+        <h2 size='5'>Software Developer</h2>
+      </div>
+
+      <h2 size='6' id='about-me-title'>About Me</h2>
+      <p id='about-me'>
+        <font size='5'>I grew up moving all over North County San Diego, from Encinitas to San Marcos and now currently residing in Vista.
+          All this moving taught me how to adapt to new situations and people. After graduating from Rancho Buena Vista High
+          School, I wasnt really sure what direction I wanted to go. I was stuck going from temp job to temp job, where I
+          got a taste for what life would be like without skills and education. Needless to say it was not my idea of a fulfilling
+          life, after hearing about my situation my Father (who is also a web developer) told me about his friend who had
+          gone to Origin Code Academy. After three months he had gotten a job earning close to six figures, thats just what
+          I needed. In less than a month I was signed up and ready to attend the program. Ill admit I was not naturally drawn
+          to software development, seeing my Father code my whole life, I never thought I would be interested (I've always
+          been into skateboarding and music). However after attending OCA I began to enjoy how rewarding it is to solve a
+          problem after pushing through the frustration and making something you can be proud of. Aswell as the confidence
+          that comes with aquiring a new skill and pushing your mental limits.</font>
+      </p>
+      <h2 size='6' id='ex'>Origin Code Academy</h2>
+      <p id='origin'>
+        <font size='5'>Origin Code Academy is an intense 12 week coding bootcamp that equips future software developers with the skill and
+          understanding needed for a job. The program begins with foundations of HTML/CSS and JavaScript, and then progressively
+          advances students towards Full-Stack development including exposure DevOps, Databases, and Build tools, and continuous
+          integration. For the majority of projects we deploy the code to a publicly accessible URL, which is submitted for
+          instructor feedback and evaluation. Origin Code Academy not only taught me how to be a web developer, it taught
+          me how to think logically and effectively</font>
+      </p>
+      <div class='background-alt'>
+        <h2 id='projects'>Projects</h2>
+        <div class='container'>
+          <div class='row'>
+            <div class='project-shadow-large'>
+              <div id='project-photo'></div>
+              <div id='project-info'>
+                <h3 id='title'>VSTDA</h3>
+                <h4 id='description'>A simple to do app, able list everyday tasks in order of importance, aswell as edit and delete them.</h4>
+                <form action = 'https://me-vstda.herokuapp.com/'><button id='button'>View Demo</button></form>
+              </div>
+            </div>
+            <div class='project-shadow-large'>
+              <div id='project-photo'></div>
+              <div id='project-info'>
+                <h3 id='title'>Change Calculator</h3>
+                <h4 id='description'>Enter the amount of money due and the amount recieved, press the calculate button and see the correct amount
+                  of change due.</h4>
+                  <form action = 'https://me-changecalculator.herokuapp.com/'><button id='button'>View Demo</button></form>
+              </div>
+            </div>
+            <div class='project-shadow-large'>
+              <div id='project-photo'></div>
+              <div id='project-info'>
+                <h3 id='title'>Float Spa</h3>
+                <h4 id='description'>A project for my moms Float Spa, using a picture and qoute api to generate relaxing images and inspiring quotes</h4>
+                <form action = 'https://me-vstda.herokuapp.com/'><button id='button'>View Demo</button></form>
+                </div>
+            </div>
+            <div class='project-shadow-large'>
+              <div id='project-photo'></div>
+              <div id='project-info'>
+                <h3 id='title'>San Diego Topspots</h3>
+                <h4 id='description'>On vacation? Goin on a date? Just want to have some alone time? Use this San Diego Topspots finder to find
+                  cool spots and make your day/night even more memorable!</h4>
+                  <form action = 'https://me-topspots.herokuapp.com/'><button id='button'>View Demo</button></form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <h2 id='skills'>Skills</h2>
+      <ul>
+        <li id='list-item-1'>JavaScript</li>
+        <li id='list-item-2'>React</li>
+        <li id='list-item-3'>HTML</li>
+        <li id='list-item-4'>CSS</li>
+        <li id='list-item-5'>MongoDB</li>
+        <li id='list-item-6'>Node.js</li>
+        <li id='list-item-7'>Git</li>
+        <li id='list-item-8'>Express</li>
+        <li id='list-item-9'>SQL</li>
+        <li id='list-item-10'>Redis</li>
+        <li id='list-item-11'>Mocha</li>
+        <li id='list-item-12'>Chai</li>
+        <li id='list-item-13'>CircleCI</li>
+      </ul>
+      <h2 id='contact'>Contact</h2>
+      <li id='contact-list-item-1'>Phone Number: 1(908)329-7971 </li>
+      <li id='contact-list-item-2'>Email: masonaesposito@gmail.com </li>
+      <div class='contact'>   
+          <form action="/thanks" method="POST">
+            
+                <input type="text" class="form-control" placeholder="First name" id='firstname' name='firstname'>
+              
+              
+                <input type="text" class="form-control" placeholder="Last name" id='lastname' name='lastname'>
+              
+              <div class="col">
+                  <input type="text" class="form-control" placeholder="Email" id='email' name='email'>
+                </div>
+    
+            <input type="submit" id='submit' />
+          </form>
+        </div>
+    </body>
+  </div>
+
+</div>
+
+
+
+
+
+
+</html>

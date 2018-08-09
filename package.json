@@ -1,0 +1,30 @@
+{
+  "name": "startnow-node200-ejs-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "build": "npm run less",
+    "start": "npm run build && node server.js",
+    "less": "lessc src/css/style.less dist/css/style.css",
+    "lint": "eslint .",
+    "test": "npm run build && mocha test/.setup.js test/*.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/masonaesposito/ejs-portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/masonaesposito/ejs-portfolio/issues"
+  },
+  "homepage": "https://github.com/masonaesposito/ejs-portfolio#readme",
+  "devDependencies": {
+    "webpack": "^4.16.4",
+    "webpack-cli": "^3.1.0"
+  },
+  "dependencies": {
+    "mailchimp-api-v3": "^1.12.0"
+  }
+}
